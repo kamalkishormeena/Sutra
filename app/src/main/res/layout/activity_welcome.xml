@@ -23,8 +23,8 @@
         android:gravity="center"
         android:orientation="horizontal"
         app:layout_constraintBottom_toBottomOf="@+id/btn_next"
-        app:layout_constraintEnd_toStartOf="@+id/btn_next"
-        app:layout_constraintStart_toEndOf="@+id/btn_skip"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/btn_next" />
 
     <com.google.android.material.button.MaterialButton
@@ -55,6 +55,7 @@
         android:background="@null"
         android:backgroundTint="@color/white"
         android:text="skip"
+        android:visibility="gone"
         android:textColor="@color/trans_black"
         app:cornerRadius="10dp"
         app:layout_constraintBottom_toBottomOf="@id/btn_next"

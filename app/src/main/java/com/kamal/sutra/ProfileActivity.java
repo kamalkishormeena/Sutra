@@ -1,6 +1,8 @@
 package com.kamal.sutra;
 
 import android.os.Bundle;
+import android.preference.PreferenceManager;
+import android.widget.TextView;
 
 import com.kamal.sutra.domain.MeditationDay;
 import com.kamal.sutra.domain.Meditations;
@@ -9,12 +11,24 @@ import java.util.Collections;
 import java.util.List;
 
 public class ProfileActivity extends ChartsBaseActivity {
+
+    private TextView name, age, gender;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_profile);
         setupToolbar("");
         enableNavigation();
+
+        name = findViewById(R.id.name);
+        gender = findViewById(R.id.gender);
+        age = findViewById(R.id.age);
+
+
+        name.setText("" + PreferenceManager.getDefaultSharedPreferences(getBaseContext()).getString("name", "Mahima"));
+        gender.setText("" + PreferenceManager.getDefaultSharedPreferences(getBaseContext()).getString("gender", "Female"));
+        age.setText("" + PreferenceManager.getDefaultSharedPreferences(getBaseContext()).getString("age", "22"));
     }
 
     @Override
