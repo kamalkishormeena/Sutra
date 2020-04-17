@@ -27,18 +27,18 @@ public class WelcomeActivity extends AppCompatActivity {
     private TextView[] dots;
     private int[] layouts;
     private Button btnSkip, btnNext;
- //   private Session session;
+   private Session session;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
         // Checking for first time launch - before calling setContentView()
-//        session = new Session(this);
-//        if (!session.isFirstTimeLaunch()) {
-//            launchHomeScreen();
-//            finish();
-//        }
+        session = new Session(this);
+        if (!session.isFirstTimeLaunch()) {
+            launchHomeScreen();
+            finish();
+        }
 
         // Making notification bar transparent
         if (Build.VERSION.SDK_INT >= 21) {
@@ -119,7 +119,7 @@ public class WelcomeActivity extends AppCompatActivity {
     }
 
     private void launchHomeScreen() {
-      //  session.setFirstTimeLaunch(false);
+        session.setFirstTimeLaunch(false);
         startActivity(new Intent(WelcomeActivity.this, MainActivity.class));
         finish();
     }
