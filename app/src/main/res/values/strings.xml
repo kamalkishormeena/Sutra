@@ -125,5 +125,9 @@
     <string name="title_activity_prepare">PrepareActivity</string>
     <string name="title_activity_meditate">MeditateActivity</string>
     <string name="title_activity_well_done">WellDoneActivity</string>
+    <string name="blue">I am Good</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 
 </resources>
