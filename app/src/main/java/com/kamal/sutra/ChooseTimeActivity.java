@@ -21,6 +21,8 @@ public class ChooseTimeActivity extends BaseActivity implements View.OnClickList
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_choose_time);
+        setupToolbar("");
+        enableNavigation();
         twoMinBtn = (Button) findViewById(R.id.btn_2_min);
         fiveMinBtn = (Button) findViewById(R.id.btn_5_min);
 //        tenMinBtn = (Button) findViewById(R.id.btn_10_min);

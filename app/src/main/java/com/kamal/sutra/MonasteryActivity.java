@@ -26,6 +26,10 @@ public class MonasteryActivity extends BaseActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_monastery);
+        setupToolbar("");
+        enableNavigation();
+        if (getSupportActionBar() != null)
+            getSupportActionBar().setHomeAsUpIndicator(R.drawable.ic_close_back);
         title = (TextView) findViewById(R.id.monastery_title);
         subtitle = (TextView) findViewById(R.id.monastery_subtitle);
         idea = (TextView) findViewById(R.id.monastery_lesson_idea);

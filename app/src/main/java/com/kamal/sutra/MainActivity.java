@@ -9,6 +9,9 @@ import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
+import androidx.core.app.ActivityOptionsCompat;
+import androidx.core.util.Pair;
+
 import com.kamal.sutra.domain.Bin;
 import com.kamal.sutra.domain.NoteType;
 import com.kamal.sutra.domain.Session;
@@ -35,6 +38,9 @@ public class MainActivity extends BaseActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        setupToolbar("");
+
         settings = getSettings();
         profile = findViewById(R.id.profile);
         monasteryBtn = findViewById(R.id.linearLayout2);
@@ -49,6 +55,11 @@ public class MainActivity extends BaseActivity {
         meditateBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+//                Intent chooseTimeActivity = new Intent(MainActivity.this, ChooseTimeActivity.class);
+//                Pair[] pairs = new Pair[1];
+//                pairs[0] = new Pair<>(findViewById(R.id.linearLayout), "bottom");
+//                ActivityOptionsCompat optionsCompat = ActivityOptionsCompat.makeSceneTransitionAnimation(MainActivity.this, pairs);
+//                startActivity(chooseTimeActivity, optionsCompat.toBundle());
                 Intent chooseTimeActivity = new Intent(MainActivity.this, ChooseTimeActivity.class);
                 startActivity(chooseTimeActivity);
             }
@@ -65,6 +76,12 @@ public class MainActivity extends BaseActivity {
         profile.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+//                Intent profileActivity = new Intent(MainActivity.this, ProfileActivity.class);
+//                Pair[] pairs = new Pair[2];
+//                pairs[0] = new Pair<>(findViewById(R.id.profile), "profile");
+//                pairs[1] = new Pair<>(findViewById(R.id.linearLayout), "bottom");
+//                ActivityOptionsCompat optionsCompat = ActivityOptionsCompat.makeSceneTransitionAnimation(MainActivity.this, pairs);
+//                startActivity(profileActivity, optionsCompat.toBundle());
                 startActivity(new Intent(MainActivity.this, ProfileActivity.class));
             }
         });

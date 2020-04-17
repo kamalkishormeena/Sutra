@@ -8,17 +8,19 @@
     tools:context=".MainActivity">
 
     <TextView
+        android:id="@+id/action_title"
+        style="@style/TextAppearance.AppCompat.Title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="24dp"
         android:text="@string/app_name"
         android:textColor="@color/trans_black"
-        style="@style/TextAppearance.AppCompat.Widget.ActionBar.Title.Inverse"
         app:layout_constraintBottom_toBottomOf="@+id/toolbar"
+        app:layout_constraintEnd_toEndOf="@+id/toolbar"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/toolbar" />
 
-    <Toolbar
+    <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolbar"
         android:layout_width="match_parent"
         android:layout_height="?actionBarSize"
@@ -36,6 +38,7 @@
         android:background="@drawable/new_circle"
         android:elevation="1dp"
         android:padding="8dp"
+        android:transitionName="profile"
         android:src="@drawable/ic_female"
         app:layout_constraintBottom_toBottomOf="@+id/textView4"
         app:layout_constraintEnd_toEndOf="parent"
@@ -97,7 +100,7 @@
         android:id="@+id/linearLayout"
         android:layout_width="match_parent"
         android:layout_height="300dp"
-        android:transitionName="up"
+        android:transitionName="bottom"
         android:background="@drawable/top_header"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

@@ -5,18 +5,39 @@
     android:layout_height="match_parent"
     android:background="@color/yellow">
 
+    <TextView
+        android:id="@+id/action_title"
+        style="@style/TextAppearance.AppCompat.Title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:text="@string/app_name"
+        android:textColor="@color/trans_black"
+        app:layout_constraintBottom_toBottomOf="@+id/toolbar"
+        app:layout_constraintEnd_toEndOf="@+id/toolbar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/toolbar" />
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:popupTheme="@style/TextAppearance.AppCompat.Light.Widget.PopupMenu.Large"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:theme="@style/ThemeOverlay.MaterialComponents.Light" />
 
     <TextView
         android:id="@+id/monastery_lesson_number"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
         android:layout_marginEnd="24dp"
         android:text="@string/monastery_lesson_number"
         android:textColor="@color/trans_black"
         android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/toolbar" />
 
     <TextView
         android:id="@+id/monastery_title"
@@ -101,15 +122,15 @@
     <com.google.android.material.button.MaterialButton
         android:id="@+id/btn_next"
         style="@style/Widget.MaterialComponents.Button"
-        android:layout_width="120dp"
-        android:layout_height="50dp"
+        android:layout_width="55dp"
+        android:layout_height="60dp"
         android:layout_marginEnd="32dp"
         android:layout_marginBottom="32dp"
         android:backgroundTint="@color/white"
         android:drawableRight="@drawable/ic_arrow"
-        android:text="Next"
+        android:text=""
         android:textColor="@color/trans_black"
-        app:cornerRadius="15dp"
+        app:cornerRadius="50dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>

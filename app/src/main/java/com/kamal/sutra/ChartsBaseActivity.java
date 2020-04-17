@@ -53,7 +53,10 @@ abstract public class ChartsBaseActivity extends BaseActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_analysis);
-
+        setupToolbar("");
+        enableNavigation();
+        if (getSupportActionBar() != null)
+            getSupportActionBar().setHomeAsUpIndicator(R.drawable.ic_close_back);
         settings = new Settings(SutraApplication.getInstance());
 
         loadingBar = (ProgressBar) findViewById(R.id.loadingBar);
