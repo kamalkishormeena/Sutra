@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+       xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+            android:id="@+id/meditate_title"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="bottom|center_horizontal"
+            android:paddingBottom="2dp"
+            android:text="Title"
+            android:textColor="#bfcdca"
+            android:textSize="35sp" />
+
+    <TextView
+            android:id="@+id/meditate_subtitle"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="top|center_horizontal"
+            android:paddingTop="2dp"
+            android:text="Subtitle"
+            android:textColor="#3e3b37"
+            android:textSize="20sp" />
+    <TextView
+            android:id="@+id/meditate_gone"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="top|center_horizontal"
+            android:paddingBottom="2dp"
+            android:text="@string/meditate_gone"
+            android:textColor="#3e3b37"
+            android:textSize="35sp"
+            android:visibility="gone"/>
+
+</merge>

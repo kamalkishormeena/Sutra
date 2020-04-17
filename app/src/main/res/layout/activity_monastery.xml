@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/yellow">
+
+
+    <TextView
+        android:id="@+id/monastery_lesson_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="24dp"
+        android:text="@string/monastery_lesson_number"
+        android:textColor="@color/trans_black"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/monastery_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:text="See In"
+        android:textColor="@color/trans_black"
+        android:textSize="22sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/monastery_lesson_number" />
+
+    <TextView
+        android:id="@+id/monastery_subtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Work with mental images"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="@+id/monastery_title"
+        app:layout_constraintTop_toBottomOf="@+id/monastery_title" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/monastery_basic_idea"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/monastery_title"
+        app:layout_constraintTop_toBottomOf="@+id/monastery_subtitle" />
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/cardView1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        app:cardCornerRadius="10dp"
+        app:contentPadding="15dp"
+        app:layout_constraintEnd_toEndOf="@+id/monastery_lesson_number"
+        app:layout_constraintStart_toStartOf="@+id/monastery_title"
+        app:layout_constraintTop_toBottomOf="@+id/textView8">
+
+        <TextView
+            android:id="@+id/monastery_lesson_idea"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/home_info"
+            android:textSize="18sp" />
+    </com.google.android.material.card.MaterialCardView>
+
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/monastery_basic_instruction"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/monastery_title"
+        app:layout_constraintTop_toBottomOf="@+id/cardView1" />
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        app:cardCornerRadius="10dp"
+        app:contentPadding="15dp"
+        app:layout_constraintEnd_toEndOf="@+id/monastery_lesson_number"
+        app:layout_constraintStart_toStartOf="@+id/monastery_title"
+        app:layout_constraintTop_toBottomOf="@+id/textView10">
+
+        <TextView
+            android:id="@+id/monastery_lesson_instruction"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/home_info"
+            android:textSize="18sp" />
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_next"
+        style="@style/Widget.MaterialComponents.Button"
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="32dp"
+        android:backgroundTint="@color/white"
+        android:drawableRight="@drawable/ic_arrow"
+        android:text="Next"
+        android:textColor="@color/trans_black"
+        app:cornerRadius="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

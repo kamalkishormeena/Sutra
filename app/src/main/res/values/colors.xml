@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#FFD853</color>
+    <color name="colorPrimaryDark">#FFD853</color>
+    <color name="colorAccent">#FFD853</color>
+    <color name="orange">#33C57A20</color>
+    <color name="yellow">#FFD853</color>
+    <color name="trans_black">#A0000000</color>
+    <color name="white">#FFFFFF</color>
+    <color name="card1">#B13C31</color>
+    <color name="card2">#FF6759</color>
+</resources>

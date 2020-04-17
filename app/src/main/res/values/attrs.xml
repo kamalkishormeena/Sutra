@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="NotingButton">
+        <attr name="title2" format="string" />
+        <attr name="subtitle2" format="string" />
+    </declare-styleable>
+</resources>
