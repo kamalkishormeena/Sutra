@@ -15,8 +15,11 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.view.Window;
 import android.view.WindowManager;
+import android.widget.AdapterView;
+import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.LinearLayout;
+import android.widget.Spinner;
 import android.widget.TextView;
 
 public class WelcomeActivity extends AppCompatActivity {
@@ -27,7 +30,7 @@ public class WelcomeActivity extends AppCompatActivity {
     private TextView[] dots;
     private int[] layouts;
     private Button btnSkip, btnNext;
-   private Session session;
+    private Session session;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -53,11 +56,13 @@ public class WelcomeActivity extends AppCompatActivity {
         btnNext = findViewById(R.id.btn_next);
 
 
+
         // layouts of all welcome sliders
         // add few more layouts if you want
         layouts = new int[]{
                 R.layout.welcome_slide1,
-               R.layout.welcome_slide2
+                R.layout.welcome_slide2,
+                R.layout.welcome_slide3
 //                R.layout.welcome_slide3,
 //                R.layout.welcome_slide4
                    };
